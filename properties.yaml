@@ -1,7 +1,6 @@
 sasstudio:
     title: "SAS Studio"
-    iconUrl:
-"https://raw.githubusercontent.com/ChuckRIHead/chuckspaces/master/workspace-logos/sas-logo.png"
+    iconUrl: "https://raw.githubusercontent.com/ChuckRIHead/chuckspaces/master/workspace-logos/sas-logo.png"
     start: [ /var/opt/workspaces/sa4c/start ]
     httpProxy:
         internalPath: "/{{ownerUsername}}/{{projectName}}/{{sessionPathComponent}}/{{runId}}/SASStudio/"
