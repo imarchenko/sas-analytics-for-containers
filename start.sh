@@ -25,8 +25,9 @@ mkdir -p $SAS_INSTALL_PATH/SASFoundation/9.4/GlobalStudioSettings
 #echo "-WORK $SAS_WORKDIR" >> $USERMODS_FILE
 #echo "-UTILLOC $SAS_UTILDIR" >> $USERMODS_FILE
  
-# Modify SASHOME variable to be $DOMINO_WORKING_DIR
-echo "-SET SASHOME \"$DOMINO_WORKING_DIR\"" >> $USERMODS_FILE
+# Modify SASHOME variable to be $SAS_INSTALL_PATH
+# TODO: Investigate if this is necessary
+#echo "-SET SASHOME \"$SAS_INSTALL_PATH\"" >> $USERMODS_FILE
  
 # Hack to ensure autoexec.sas can live in the Domino project folder.
 # This is needed to properly tie in autoexec.sas with SAS Studio
