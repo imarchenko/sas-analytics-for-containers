@@ -61,4 +61,4 @@ if ! $DOMINO_USE_SUBDOMAIN; then
 fi
  
 # Start SAS Studio and idle while it runs
-sudo -E bash -c "$SAS_INSTALL_PATH/sas/sasstudio.sh start && while true; do :; done"
+sudo -E bash -c "$SAS_INSTALL_PATH/sas/sasstudio.sh start && while true ; do :; sleep 60 ; done"
